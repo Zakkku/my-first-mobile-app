@@ -6,7 +6,7 @@ export default function App() {
   const showToast = () => {
     console.log("Toast clicked");
     ToastAndroid.show(
-      "You clicked this toast!",
+      "You clicked the toast!",
       ToastAndroid.SHORT,
       ToastAndroid.BOTTOM
     )
@@ -16,6 +16,9 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.text}>This is my first mobile app</Text>
       <StatusBar style="auto" />
+      <TouchableOpacity style={styles.button} onPress={() => showToast()}>
+        <Text style={{color: '#fff'}}>Press me!</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -29,7 +32,7 @@ const styles = StyleSheet.create({
   },
 
   text: {
-    color: "#304ffe",
+    color: "deepskyblue",
     fontSize: 24,
     padding: 20
     },
