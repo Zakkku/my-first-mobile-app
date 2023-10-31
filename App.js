@@ -15,9 +15,11 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <CounterComponent />
+      
       <Text style={styles.text}>This is my first mobile app</Text>
+      <CounterComponent  />
       <StatusBar style="auto" />
+      
       <TouchableOpacity style={styles.button} onPress={() => showToast()}>
         <Text style={{color: '#fff'}}>Press me!</Text>
       </TouchableOpacity>
@@ -46,5 +48,7 @@ const styles = StyleSheet.create({
       height: 50,
       justifyContent: "center",
       alignItems: "center"
-    }
+    },
+
+
 });
