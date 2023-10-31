@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ToastAndroid, TouchableOpacity } from 'react-native';
+import CounterComponent from './CounterComponent';
 
 export default function App() {
 
   const showToast = () => {
-    console.log("Toast clicked");
+    //console.log("Toast clicked");
     ToastAndroid.show(
       "You clicked the toast!",
       ToastAndroid.SHORT,
@@ -14,6 +15,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      <CounterComponent />
       <Text style={styles.text}>This is my first mobile app</Text>
       <StatusBar style="auto" />
       <TouchableOpacity style={styles.button} onPress={() => showToast()}>
