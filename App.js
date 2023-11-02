@@ -1,10 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ToastAndroid, TouchableOpacity } from 'react-native';
 import CounterComponent from './CounterComponent';
-import BottomNavigation from './BottomNavigation';
-// import Icon from 'react-native-ico-material-design';
-
-
 
 export default function App() {
 
@@ -19,18 +15,15 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.headerText}>This is my first mobile app</Text>
+      
+      <Text style={styles.text}>This is my first mobile app</Text>
       <CounterComponent  />
       <StatusBar style="auto" />
+      
       <TouchableOpacity style={styles.button} onPress={() => showToast()}>
-      <Text style={{color: '#fff'}}>Press me!</Text>
-      </TouchableOpacity> 
-      <View style={styles.container} > 
-      <BottomNavigation />
-      </View>
+        <Text style={{color: '#fff'}}>Press me!</Text>
+      </TouchableOpacity>
     </View>
-    
-
   );
 }
 
@@ -40,22 +33,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: 40
   },
 
   text: {
     color: "deepskyblue",
     fontSize: 24,
     padding: 20
-    },
-
-    headerText: {
-      color: "deepskyblue",
-      fontSize: 46,
-      // padding: 10,
-      // width: '90%',
-      textAlign: 'center',
-      paddingTop: 10
     },
 
     button: {
