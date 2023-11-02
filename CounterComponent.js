@@ -12,7 +12,7 @@ export default class CounterComponent extends React.Component {
             value: this.state.value + 1,
             total_taps: this.state.total_taps + 1
         })
-        //console.log("Value: " + (this.state.value + 1) + " Total taps: " + (this.state.total_taps))
+        console.log("Value: " + (this.state.value + 1) + " Total taps: " + (this.state.total_taps))
     }
 
     decrementValue = () => {
@@ -20,7 +20,7 @@ export default class CounterComponent extends React.Component {
             value: this.state.value - 1,
             total_taps: this.state.total_taps + 1
         })
-        //console.log("Value: " + (this.state.value - 1) + " Total taps: " + (this.state.total_taps))
+        console.log("Value: " + (this.state.value - 1) + " Total taps: " + (this.state.total_taps))
     }
 
     resetValues = () => {
